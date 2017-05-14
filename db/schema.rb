@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170424173636) do
+ActiveRecord::Schema.define(version: 20170514080728) do
 
   create_table "roles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -38,10 +38,14 @@ ActiveRecord::Schema.define(version: 20170424173636) do
 
   create_table "talks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
-    t.text     "context",    limit: 65535
+    t.text     "context",     limit: 65535
     t.string   "part1"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.text     "thanks",      limit: 65535
+    t.date     "post_date"
+    t.string   "poster"
+    t.string   "profile_pic"
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
