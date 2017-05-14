@@ -6,6 +6,8 @@ class User < ApplicationRecord
   has_and_belongs_to_many :roles
   has_many :talkers
   has_many :talks, through: :talkers
+  # about includes some non-login-relared information
+  has_one :about
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
