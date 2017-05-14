@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170514100010) do
+ActiveRecord::Schema.define(version: 20170514104129) do
 
   create_table "abouts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "bio",        limit: 65535
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20170514100010) do
     t.string   "fb_url"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_abouts_on_user_id", using: :btree
   end
 
   create_table "roles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -71,6 +73,8 @@ ActiveRecord::Schema.define(version: 20170514100010) do
     t.datetime "updated_at",                          null: false
     t.string   "uid"
     t.string   "provider"
+    t.string   "name"
+    t.string   "english_name"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
