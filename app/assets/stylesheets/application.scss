@@ -1,0 +1,47 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header {
+  height: 100px;
+  position: relative;
+  img {
+    height: 100px;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    a {
+      color: gray;
+    }
+
+    .active a, .active a:hover {
+      color: red;
+      background-color: lightgray;
+      border-radius: 0;
+    }
+  }
+}
+
+.talk-video {
+  height: 450px;
+  background-color: black;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.talk-article {
+  border-right: solid gray thin;
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+.sidebar {
+  margin-top: 50px;
+  color: red;
+}
