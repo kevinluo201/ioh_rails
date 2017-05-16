@@ -10,13 +10,84 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170427094036) do
+ActiveRecord::Schema.define(version: 20170516064040) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "context"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "banners", force: :cascade do |t|
+    t.string   "img"
+    t.string   "page"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "colleges", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "school_id"
+    t.integer  "department_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "departments", force: :cascade do |t|
+    t.string   "chinese_name"
+    t.string   "chinese_short"
+    t.string   "english_name"
+    t.string   "english_short"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "discipline_id"
+  end
+
+  create_table "disciplines", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "context"
+    t.datetime "start"
+    t.datetime "end"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "talk_id"
+    t.integer  "jobTalk_id"
+  end
+
+  create_table "indentities", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "news", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "title"
     t.text     "context"
+    t.integer  "user_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -30,6 +101,18 @@ ActiveRecord::Schema.define(version: 20170427094036) do
     t.integer "role_id", null: false
     t.index ["role_id"], name: "index_roles_users_on_role_id"
     t.index ["user_id"], name: "index_roles_users_on_user_id"
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string   "chinese_name"
+    t.string   "english_name"
+    t.string   "english_short"
+    t.string   "region"
+    t.string   "category"
+    t.string   "featured"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "country_id"
   end
 
   create_table "users", force: :cascade do |t|
