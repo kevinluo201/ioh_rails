@@ -11,5 +11,6 @@ module IohRails
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
   end
 end

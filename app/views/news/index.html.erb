@@ -1,0 +1,11 @@
+<% if can? :create, News %>
+  <%= link_to "新增 News", new_news_path %>
+<% end %>
+
+<h1>文章列表</h1>
+
+<%= form_for(@news) do |f| %>
+	<%=f.label :title, "標題"%>
+	<%=f.text_field :title%>
+
+<%end%>
