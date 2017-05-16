@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170516064040) do
 
+<<<<<<< HEAD
   create_table "abouts", force: :cascade do |t|
     t.text     "bio"
     t.string   "phone"
@@ -23,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170516064040) do
     t.index ["user_id"], name: "index_abouts_on_user_id"
   end
 
+=======
+>>>>>>> c7f6d80... add article, banner, college, country, department, dispeline, event, favorite, identity, school models
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "context"
@@ -126,6 +129,7 @@ ActiveRecord::Schema.define(version: 20170516064040) do
     t.integer  "country_id"
   end
 
+<<<<<<< HEAD
   create_table "talkers", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "talk_id"
@@ -149,6 +153,8 @@ ActiveRecord::Schema.define(version: 20170516064040) do
     t.string   "profile_pic"
   end
 
+=======
+>>>>>>> c7f6d80... add article, banner, college, country, department, dispeline, event, favorite, identity, school models
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
