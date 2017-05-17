@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "footer" %>
 <div class="talk-video">
   <iframe scrolling="no" src="<%= @talk.part1 %>" frameborder="0" class="iframe-class" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
 </div>
@@ -11,3 +12,58 @@
     講者其它講座...
   </div>
 </div>
+
+
+
+<footer id="content-info" class="container" role="contentinfo">
+  <div class="container-center">
+    <div class="in-left">
+      <a href=""><img src="https://ioh.tw/assets/ioh_logo.png"></a>
+      <p>"當每個人都說起故事，我們可以改變世界。"</p>
+      
+      <form action="" method="get">
+        <input type="email" required="required" placeholder="輸入電子郵件">
+        <button type="submit" value="Submit">收到最新消息</button>
+      </form>
+      
+    </div>
+    <div class="in-right">
+      <div class="footer_row">
+        <ul>
+          <p>about</p>
+          <a href=""><li>創辦初衷</li></a>
+          <a href=""><li>團隊成員</li></a>
+          <a href=""><li>紀錄片：志氣</li></a>
+          <a href=""><li>媒體報導</li></a>
+      </div>
+      <div class="footer_row">
+        <ul>
+        <p>join</p>
+          <a href=""><li>成為實習生</li></a>
+          <a href=""><li>成為全職</li></a>
+          <a href=""><li>成為講者</li></a>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+      <div class="footer_row">
+        <ul>
+        <p>follow</p>
+          <a href=""><li>聯絡&nbsp;IOH</li></a>
+          <a href=""><li>贊助&nbsp;IOH</li></a>
+          <a href=""><li>使用&nbsp;IOH</li></a>
+          <a href=""><li>追蹤&nbsp;IOH</li></a>
+        </ul>
+      </div>
+      <div class="footer_row">
+        <ul>
+        <p>more</p>
+          <a href=""><li>講座影片</li></a>
+          <a href=""><li>最新文章</li></a>
+          <a href=""><li>最新活動</li></a>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p id="company">&copy; 2017 IOH 開放個人經驗平台</p>
+</footer>
