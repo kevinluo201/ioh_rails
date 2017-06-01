@@ -1,28 +1,82 @@
 <div class="talk-video">
-  <iframe scrolling="no" src="<%#= @talk.part1 %>" frameborder="0" class="iframe-class" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+  <iframe scrolling="no" src="<%= @talk.part1 %>" frameborder="0" class="iframe-class" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
 </div>
 <div class="row">
-  <div class="col-sm-7 col-sm-offset-1">
+  <div class="col-sm-9">
     <article class="talk-article">
-      <%#=raw @talk.context %>
+      <h2>PART 1：關於就讀淡江大學建築系的經驗分享</h2>
+      <p class="share">Share Links</p>
+      <%=raw @talk.context %>
     </article>
-    <div class="about_talker">
-        <div class="talker_photo">
-          <%= link_to root_path, id: 'photo' do %>
-            <%= image_tag("talker_photo.png") %>
-          <% end %>
-        </div>
-        <div class="talker_intro">
-          <h4>關於講者｜吳鈺嫻</h4>
-          <p>Yu-Xian  Wu 吳鈺嫻，成長於雲林縣，高中後獨自北上就讀，畢業於台北市立第一女子高級中學。目前就讀淡江大學建築系四年級，行天宮資優培育計畫獲獎人，系上首屆榮譽學程學生，並且取得系上預研生資格。甫進大學，恰巧校方開創新的學程－榮譽學程，在這學程裡除了有特別設計的多元課程外，有趣的是多了更多機會接觸各領域佼佼者相互學習，無形中也培養跨領域整合的能力，同時引發她對互動設計和材料的興趣，並且刺激在建築設計上的想像。經過四年的洗禮，除了空間設計能力增進外，建立了獨特的思考模式，習得用圖說或是其他媒材詮釋想法。意外獲得獎學金的鼓勵，讓鈺嫻相信看似無關聯的每個點，最後都會連成一條線帶領她朝下個目標邁進。</p>
-
-        </div>
-      
-    </div>
+    <p>有問題嗎？</p>
+    <button>我要發問！</button>
+    <p>還有更多校系經驗問題想詢問嗎？</p>
+    <button>Forum 討論區</button>
+    <button>IOH 臉書社團：大學科系與升學經驗交流平台</button>
   </div>
-  <div class="sidebar col-sm-4">
+  <div class="sidebar col-sm-2">
     講者其它講座...
   </div>
+</div>
+
+<div class="about">
+  <div class="speaker row">
+    <div class="col-sm-3">
+      <%= link_to root_path, id: 'photo' do %>
+        <%= image_tag("talker_photo.png") %>
+      <% end %>
+    </div>
+    <div class="col-sm-7 speaker_intro">
+      <h3>About Speaker</h3>
+      <h4>關於講者｜ <%= @user.name %> <%= @user.english_name %></h4>
+      <h4 class="contact">聯絡講者</h4>
+      <div class="edu">
+        <h5>臺灣大學 創意創業學程創意創業學程, 第六屆</h5>
+        <h5>國立臺灣大學, 心理系學士, 2016</h5>
+        <h5>臺北市立北一女中, 2011</h5>
+      </div>
+      <p><%= @user.about.bio %></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="works row">
+    <h3>Works</h3>
+  </div>
+
+  <div class="education">
+    <h3>Education</h3>
+    <ul>
+      <li>宜蘭縣立復興國民中學 2007 - 2010</li>
+      <li>國立蘭陽女子高級中學 2010 - 2013</li>
+      <li>國立高雄師範大學 2013 - 2017</li>
+    </ul>  
+  </div>
+
+  <div class="experience">
+    <h3>Experience</h3>
+    <ul>
+      <li>中國福建省信通置業不動產股份有限公司-策劃中心實習生  2015 / 07 ~ 2015 / 08  </li>
+      <p>於公司內的策劃中心內擔任廣告行銷設計，活動規劃或建築圖設計的助理。也會到預備活動現場進行協助規劃和場佈;行銷面也體驗到中國與台灣的不同，藉由與不同國籍不同文化的同事，開會討論上的交流更能尊重文化差異以及相同語言上的隔閡，並更有效的溝通和完成共同的目標。公司招商程序部份，也在這裡有了初步了解和執行經驗。  </p>
+      <li>26's愚人世代 ＿ 心中的想像 - 創辦人  2013 / 09 ~ 2016 / 08  </li>
+      <p>藉著拍攝身邊26位朋友的故事經歷，以傳達友情重要性，並到花蓮進行兒童之家課後教育，藉由課程去傳達給下一代付出人與人間的鏈結的關係，和許多朋友人生中的故事。此活動與廣告行銷公司有合作關係，從中結合廣告觀念的實務去執行，並因此有受邀至TEDx進行演講的經驗。  </p>
+    </ul>
+  </div>
+
+  <div class="skill">
+    <h3>Skill</h3>
+    <ul>
+      <li>領導能力</li>
+      <li>Adobe Illustrator</li>
+      <li>Photoshop</li>
+    </ul>  
+  </div>
+
+  <div class="contact_me">
+    <h3>Contact Me</h3>
+  </div>
+
 </div>
 
 

@@ -6,6 +6,7 @@ header {
   position: relative;
   img {
     height: 100px;
+    margin-left: 50px;
   }
 
   .nav {
@@ -39,6 +40,11 @@ header {
   border-right: solid gray thin;
   margin-top: 50px;
   padding: 0 50px;
+  font-size: 16px;
+
+  .share{
+    color: #b0b0b0
+  }
 }
 
 .sidebar {
@@ -47,7 +53,93 @@ header {
 }
 
 
-#content-info{
+
+
+
+
+/*關於講者 start*/
+
+.about{
+  width: 100%;
+  background-color: #F0F0F0;
+
+  .speaker{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .works, .education, .experience, .skill, .contact_me{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+hr{
+  border-top: 1px solid #b0b0b0;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.speaker{
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  img{
+    width: 100%;
+  }
+
+  .speaker_intro {
+    > h3{
+      color: red;
+      margin-top: 0;
+    }
+    .contact{
+      color: red;
+    }
+    .edu{
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      h5{
+        color: #fff;
+        line-height: 8px;
+      }
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.education{
+  font-size: 16px; 
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.experience{
+  font-size: 16px; 
+  
+  li{
+    line-height: 35px;
+    font-weight: bold;
+  }
+}
+
+.skill{
+  li{
+    font-size: 16px; 
+    line-height: 35px;
+  }
+}
+
+/*關於講者 end*/
+
+
+
+/*footer start*/
+
+footer{
   width: 100%;
   background-color: #F0F0F0;
   margin-top: 20px;
@@ -57,41 +149,10 @@ header {
   }
 }
 
-
-.about_talker{
-  width: 95%;
-  height: auto;
-  background-color: #F0F0F0;
-
-  .talker_photo{
-    width: 120px;
-    height: 120px;
-    margin-top: 15px;
-    margin-left: 15px;
-    display: inline-block;
-    float: left;
-  }
-
-  .talker_intro{
-    background-color: #F0F0F0;
-    width: 76%;
-    height: auto;
-    margin: 20px;
-    display: inline-block;
-    
-  }
-}
-
-
-
-
-
-
-/*footer start*/
-.container-center{
-  width: 86%;
-  height: 230px;
-  margin: 25px auto 0;
+.container{
+  height: 280px;
+  width: 100%;
+ 
 
   input{
     border: 0px;
@@ -114,10 +175,13 @@ header {
   }
 }
 
-.in-left{
-  width: 28%;
-  float: left;
+.container > .row{
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 
+.in-left{
   img{
     height: 120px;
   }
@@ -132,18 +196,13 @@ header {
 }
 
 .in-right{
-  width: 72%;
-  float: left;
-
+  
   p{
     margin: 0;
     text-align: left;
   }
 
   .footer_row{
-    width: 24.5%;
-    display: inline-block;
-
     ul{
       float: right;
     }
@@ -154,7 +213,6 @@ header {
     p{
       font-weight: bold;
       font-size: 16px;
-      margin-bottom: 8px;
     }
   }
 
@@ -170,13 +228,26 @@ header {
 
 #company{
   text-align: center;
-  margin: 0;
-  margin-bottom: 10px;
   font-size: 12px;
+  margin-top: 25px;
 }
 
 /*footer end*/
 
 
 
+.ss{
+  border: 1px #000 solid;
+  height: 50px;
+}
+
+.row {
+  margin-right: 0px; 
+  margin-left: 0px;
+}
+ 
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
