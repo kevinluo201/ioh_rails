@@ -23,6 +23,10 @@ if Rails.env.development?
 大學期間積極參與課外活動，有多次活動參與經驗，培養執行計畫、團隊合作與表達溝通的能力。對於臨床藥學十分有興趣，在校修習臨床藥學模組。2014  年 7 月積極爭取到前往美國南加州大學（University of Southern California Clinical Pharmacy And Therapeutic Program）研習的機會，接受了實證醫學、臨床藥物治療學等課程內容。2014 年 8 月於台灣諾和諾德藥品股份有限公司暑期實習，接觸銷售行銷、臨床試驗。2015 年於財團法人彰化基督教醫院完成 640 小時藥學教育實習。'
   about.save!
 
+  about = About.new(user: user)
+  about.bio = ''
+  about.save!
+
   talker = Talker.create!(user: user)
   talk = Talk.new(talker: talker)
   talk.part1 = 'https://ioh.present.me/embed/870/400/40456-39640-37291-37291-34277-31995-37165-33463-34183-part-1'
@@ -40,5 +44,6 @@ if Rails.env.development?
   | <p>&nbsp;</p>
   END
   talk.save!
+
 end
 
