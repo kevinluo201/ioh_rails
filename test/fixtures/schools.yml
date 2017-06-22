@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chinese_name: MyString
+  english_name: MyString
+  english_short: MyString
+  region: MyString
+  category: MyString
+  featured: MyString
+
+two:
+  chinese_name: MyString
+  english_name: MyString
+  english_short: MyString
+  region: MyString
+  category: MyString
+  featured: MyString

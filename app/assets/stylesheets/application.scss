@@ -1,0 +1,270 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header {
+  height: 100px;
+  position: relative;
+  img {
+    height: 100px;
+    margin-left: 50px;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    a {
+      color: gray;
+    }
+
+    .active a, .active a:hover {
+      color: red;
+      background-color: lightgray;
+      border-radius: 0;
+    }
+  }
+}
+
+.talk-video {
+  height: 450px;
+  background-color: black;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.talk-article {
+  border-right: solid gray thin;
+  margin-top: 50px;
+  padding: 0 50px;
+  font-size: 16px;
+
+  .share{
+    color: #b0b0b0
+  }
+}
+
+.sidebar {
+  margin-top: 50px;
+  color: red;
+}
+
+
+
+
+
+
+/*關於講者 start*/
+
+.about{
+  width: 100%;
+  background-color: #F0F0F0;
+
+  .speaker{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .works, .education, .experience, .skill, .contact_me{
+   
+  }
+}
+
+hr{
+  border-top: 1px solid #b0b0b0;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.speaker{
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  img{
+    width: 100%;
+  }
+
+  .speaker_intro {
+    > h3{
+      color: red;
+      margin-top: 0;
+    }
+    .contact{
+      color: red;
+    }
+    .edu{
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      h5{
+        color: #fff;
+        line-height: 8px;
+      }
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.education{
+  font-size: 16px; 
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.experience{
+  font-size: 16px; 
+  
+  li{
+    line-height: 35px;
+    font-weight: bold;
+  }
+}
+
+.skill{
+  li{
+    font-size: 16px; 
+    line-height: 35px;
+  }
+}
+
+.contact_me{
+  padding-bottom: 50px;
+  img{
+    width: 28px;
+    height: 31px;
+    margin-right: 20px;
+  }
+}
+
+.question{
+  height: 566px;
+  margin-bottom: 100px;
+}
+
+.sponsor{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.helper{
+  
+}
+
+/*關於講者 end*/
+
+
+
+/*footer start*/
+
+footer{
+  width: 100%;
+  background-color: #F0F0F0;
+  margin-top: 20px;
+
+  form{
+    white-space: nowrap;
+  }
+}
+
+.container{
+  height: 280px;
+  width: 100%;
+ 
+
+  input{
+    border: 0px;
+    color: #BCB7B7;
+    height: 31px;
+    width: 80%;
+    padding: 0px 10px;
+  -webkit-box-shadow: inset 0 0px 0px;
+    -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin:0 auto; 
+  }
+  button {
+    height: 31px;
+    width: 120px;
+    border: 0;
+    background-color: #d0d0d0;
+    margin-left: -2%;
+  }
+}
+
+.container > .row{
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.in-left{
+  img{
+    height: 120px;
+  }
+  
+  p{
+    text-align: left;
+    color: gray;
+    font-size: 16px;
+    line-height: 50px;
+    white-space: nowrap;
+  }
+}
+
+.in-right{
+  
+  p{
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer_row{
+    ul{
+      float: right;
+    }
+    li{
+      list-style-type:none;
+      line-height: 25px;
+    }
+    p{
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .footer_row a, .footer_row:active{
+    color: #000000;
+  }
+  .footer_row a:hover{
+    color:#c33838;
+    text-decoration: none;
+  } 
+
+}
+
+#company{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+/*footer end*/
+
+
+
+.row {
+  margin-right: 0px; 
+  margin-left: 0px;
+}
+ 
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
