@@ -69,8 +69,7 @@ header {
   }
 
   .works, .education, .experience, .skill, .contact_me{
-    margin-left: 60px;
-    margin-right: 60px;
+   
   }
 }
 
@@ -131,6 +130,29 @@ hr{
     font-size: 16px; 
     line-height: 35px;
   }
+}
+
+.contact_me{
+  padding-bottom: 50px;
+  img{
+    width: 28px;
+    height: 31px;
+    margin-right: 20px;
+  }
+}
+
+.question{
+  height: 566px;
+  margin-bottom: 100px;
+}
+
+.sponsor{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.helper{
+  
 }
 
 /*關於講者 end*/
@@ -235,11 +257,6 @@ footer{
 /*footer end*/
 
 
-
-.ss{
-  border: 1px #000 solid;
-  height: 50px;
-}
 
 .row {
   margin-right: 0px; 
